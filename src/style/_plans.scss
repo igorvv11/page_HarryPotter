@@ -1,0 +1,102 @@
+@use 'variaveis';
+
+
+.plans{
+    padding: 5.6vw;
+    
+    h2{
+        text-align: center;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        margin-top:50px ;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .button {
+            margin-top: 24px;
+        }
+    
+        &__item{
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+
+            &--grifi{
+                
+                border: 2px solid #7F0909;
+                strong{
+                    color: #7F0909;
+                }
+                button{
+                    background-color:#7F0909;
+                    border-color: #7F0909;
+                    color: #D3A625;
+                    &:hover{
+                        background-color: lighten(#7F0909 , 3%);
+                    }
+                }
+            }
+            &--sons{
+                border: 2px solid #1A472A;
+                strong{
+                    color: #1A472A;
+                }
+                button{
+                    background-color:#1A472A;
+                    border-color: #1A472A;
+                    color: silver;
+                    &:hover{
+                        background-color: lighten( #1A472A, 3%);
+                    }
+                }
+            }
+            &--cor{
+                
+                border: 2px solid #222F5B;
+                strong{
+                    color: #222F5B;
+                }
+                button{
+                    background-color:#222F5B;
+                    border-color: #222F5B;
+                    color:#946B2D;
+                    &:hover{
+                        background-color: lighten( #222F5B, 3%);
+                    }
+                }
+            }
+            &--lufa{
+                
+                border: 2px solid variaveis.$corDoFundoBotaoPrimario;
+                button{
+                    color: #000;
+                }
+            }
+            // 
+
+            // &:nth-child(2){
+            //     background-image: url(../images/fundo_combo_plus.png);
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            // }
+
+            img{
+                height: 83px;
+            }
+
+            strong{
+                display: block;
+                margin-top: 24px;
+                
+            }
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
