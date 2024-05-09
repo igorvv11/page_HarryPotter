@@ -25,6 +25,11 @@
             padding: 60px 44px 44px;
             max-width: 380px;
             width: 100%;
+            margin-bottom: 14px;
+            @media (max-width: 768px) {
+            margin-left: 125px;
+            }
+
 
             &--grifi{
                 

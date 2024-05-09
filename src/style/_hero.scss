@@ -8,11 +8,11 @@
     background-size: cover;
 
     @media( max-width: 768px){
-        background-image: url(../images/hero_celular.jpeg);
         padding-top: calc(50vw + 25px);
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -55px;
+        background-image: url(../images/her-HaarryPorre.png);
     }
 
 
@@ -25,6 +25,9 @@
 
     &__content{
         max-width: 640px;
+        @media( max-width: 768px){
+            margin-top: -95px;
+        }
         
         &__branding{
             max-width: 320px;
